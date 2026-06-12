@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="https://static.cdninstagram.com/rsrc.php/v3/yz/r/aH47Wg9iM_7.ico">
+</head>
+<body class="auth-body">
+  <main class="auth-container">
+    <div class="auth-card">
+      <h1 class="instagram-logo">Instagram</h1>
+
+      <form id="auth-form" class="auth-form">
+        <div class="input-group">
+          <input type="email" id="email" placeholder="Email" required>
+        </div>
+
+        <div class="input-group" id="username-group" style="display: none;">
+          <input type="text" id="username" placeholder="Username">
+        </div>
+
+        <div class="input-group">
+          <input type="password" id="password" placeholder="Password" required>
+        </div>
+
+        <div class="input-group" id="confirm-password-group" style="display: none;">
+          <input type="password" id="confirm-password" placeholder="Confirm Password">
+        </div>
+
+        <button type="submit" class="btn-primary" id="submit-btn">Log In</button>
+
+        <div class="error-message" id="error-message"></div>
+      </form>
+
+      <div class="divider">
+        <div class="divider-line"></div>
+        <span>OR</span>
+        <div class="divider-line"></div>
+      </div>
+
+      <a href="#" class="forgot-password" id="forgot-link">Forgot password?</a>
+    </div>
+
+    <div class="auth-switch-card">
+      <p id="switch-text">Don't have an account? <a href="#" id="switch-link">Sign up</a></p>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="auth.js"></script>
+</body>
+</html>

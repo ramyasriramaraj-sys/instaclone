@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="https://static.cdninstagram.com/rsrc.php/v3/yz/r/aH47Wg9iM_7.ico">
+</head>
+<body>
+  <!-- Left Sidebar -->
+  <aside class="sidebar-left">
+    <div class="sidebar-content">
+      <a href="feed.html" class="sidebar-logo">
+        <h1 class="instagram-logo">Instagram</h1>
+      </a>
+
+      <nav class="sidebar-nav">
+        <a href="feed.html" class="nav-item active">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/>
+            <polyline points="9 22 9 12 15 12 15 22"/>
+          </svg>
+          <span>Home</span>
+        </a>
+
+        <button class="nav-item" id="search-btn">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"/>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          </svg>
+          <span>Search</span>
+        </button>
+
+        <a href="#" class="nav-item">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"/>
+            <line x1="12" y1="22" x2="12" y2="15.5"/>
+            <polyline points="22 8.5 12 15.5 2 8.5"/>
+          </svg>
+          <span>Explore</span>
+        </a>
+
+        <a href="#" class="nav-item">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="2" y="2" width="20" height="20" rx="2"/>
+            <polygon points="10 8 16 11 10 14 10 8" fill="currentColor"/>
+          </svg>
+          <span>Reels</span>
+        </a>
+
+        <a href="#" class="nav-item">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/>
+          </svg>
+          <span>Messages</span>
+        </a>
+
+        <button class="nav-item" id="notifications-btn">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9"/>
+            <path d="M13.73 21a2 2 0 01-3.46 0"/>
+          </svg>
+          <span>Notifications</span>
+        </button>
+
+        <a href="#" class="nav-item">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="3" width="18" height="18" rx="2"/>
+            <circle cx="8.5" cy="8.5" r="1.5"/>
+            <polyline points="21 15 16 10 5 21"/>
+          </svg>
+          <span>Create</span>
+        </a>
+
+        <a href="profile.html" class="nav-item">
+          <div class="nav-avatar">
+            <img src="https://i.pravatar.cc/24?img=1" alt="Profile">
+          </div>
+          <span>Profile</span>
+        </a>
+      </nav>
+
+      <div class="sidebar-bottom">
+        <button class="nav-item" id="more-btn">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"/>
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <line x1="3" y1="18" x2="21" y2="18"/>
+          </svg>
+          <span>More</span>
+        </button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Feed -->
+  <main class="feed-main">
+    <!-- Stories Row -->
+    <div class="stories-container" id="stories-container">
+      <div class="stories-wrapper" id="stories-wrapper">
+        <div class="story-item">
+          <div class="story-avatar your-story">
+            <img src="https://i.pravatar.cc/56?img=1" alt="Your story">
+            <div class="story-plus">+</div>
+          </div>
+          <span class="story-username">Your story</span>
+        </div>
+        <!-- Story items will be injected by JS -->
+      </div>
+      <button class="stories-scroll-btn stories-scroll-left" id="scroll-left">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+          <polyline points="15 18 9 12 15 6"/>
+        </svg>
+      </button>
+      <button class="stories-scroll-btn stories-scroll-right" id="scroll-right">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+          <polyline points="9 18 15 12 9 6"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Posts Feed -->
+    <div class="posts-feed" id="posts-feed">
+      <!-- Posts will be injected by JS -->
+    </div>
+  </main>
+
+  <!-- Right Sidebar -->
+  <aside class="sidebar-right">
+    <div class="sidebar-right-content">
+      <!-- Current User -->
+      <div class="current-user">
+        <a href="profile.html" class="current-user-avatar">
+          <img src="https://i.pravatar.cc/44?img=1" alt="Profile">
+        </a>
+        <div class="current-user-info">
+          <a href="profile.html" class="username">username_</a>
+          <span class="name">Your Name</span>
+        </div>
+        <button class="switch-btn">Switch</button>
+      </div>
+
+      <!-- Suggested For You -->
+      <div class="suggestions-section">
+        <div class="suggestions-header">
+          <span>Suggested for you</span>
+          <a href="#">See All</a>
+        </div>
+        <div class="suggestions-list" id="suggestions-list">
+          <!-- Suggestions injected by JS -->
+        </div>
+      </div>
+
+      <!-- Footer Links -->
+      <div class="sidebar-footer">
+        <div class="footer-links">
+          <a href="#">About</a>
+          <a href="#">Help</a>
+          <a href="#">Press</a>
+          <a href="#">API</a>
+          <a href="#">Jobs</a>
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Locations</a>
+          <a href="#">Language</a>
+        </div>
+        <p class="copyright">&copy; 2025 Instagram from Meta</p>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Mobile Bottom Nav -->
+  <nav class="mobile-bottom-nav">
+    <a href="feed.html" class="mobile-nav-item active">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+      </svg>
+    </a>
+    <a href="#" class="mobile-nav-item">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="11" cy="11" r="8"/>
+        <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+      </svg>
+    </a>
+    <a href="#" class="mobile-nav-item">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <rect x="2" y="2" width="20" height="20" rx="2"/>
+        <line x1="12" y1="8" x2="12" y2="16"/>
+        <line x1="8" y1="12" x2="16" y2="12"/>
+      </svg>
+    </a>
+    <a href="#" class="mobile-nav-item">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/>
+      </svg>
+    </a>
+    <a href="profile.html" class="mobile-nav-item">
+      <img src="https://i.pravatar.cc/24?img=1" alt="Profile" class="mobile-nav-avatar">
+    </a>
+  </nav>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
